@@ -1,0 +1,45 @@
+nav{
+    padding: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+svg{
+    margin-top: 14px;
+    margin-left: 10px;
+}
+ul{
+    list-style-type: none;
+    float:right ;
+    font-size: large;
+}
+ul li{
+    display: inline-block;
+    padding-left: 20px;
+    
+}
+li a{
+    text-decoration: none;
+    color: black;
+    margin-top: 40px;
+    font-family:  Helvetica;
+}
+.one{
+    margin-right: 250px;
+    
+}
+.button{
+    color:white;
+font-family: Clash Grotesk;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 34px; 
+background: #764CF0;
+border-radius: 30px;
+padding-left: 25px;
+padding-right: 25px;
+}
+.three{
+    margin-right: 10px;
+}
+
