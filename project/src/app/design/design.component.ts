@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoginserviceService } from '../loginservice.service';
 
 @Component({
   selector: 'app-design',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./design.component.css']
 })
 export class DesignComponent {
+  showDesign = false;
+  constructor(private sharedataservice: LoginserviceService) {}
 
 }

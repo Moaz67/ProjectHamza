@@ -9,6 +9,11 @@ import { LoginserviceService } from '../loginservice.service';
 })
 export class HeaderComponent {
   constructor(private route:Router,private sharedDataService:LoginserviceService){}
+  onSignUpClick() {
+    debugger
+    this.route.navigate(['/createAccount']);
+    this.sharedDataService.setShowDesign(false);
+  }
 /*log:boolean=true
 login(){
   debugger

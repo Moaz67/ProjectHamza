@@ -8,17 +8,13 @@ import { HeaderComponent } from './header/header.component';
 const routes: Routes = [
   {
     path: '',
-    component: HeaderComponent, 
-    children: [
-      { path: '', component: DesignComponent }, 
-    ],
+    component: HeaderComponent,
   },
   {
-    path: 'createAccont',
-    component: HeaderComponent, 
+    path: 'createAccount',
+    component: HeaderComponent,
   },
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

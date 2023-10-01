@@ -1,9 +1,5 @@
-<div style="border:1px solid white; height:589px; width:100%">
+<div style="border: 1px solid white; height: 589px; width: 100%">
   <app-header></app-header>
-  
-    <app-design></app-design>
-
-    
- 
-
-  </div>
+  <app-design *ngIf="showDesign"></app-design>
+</div>
+<button (click)="toggleDesignComponent()">Sign up</button>

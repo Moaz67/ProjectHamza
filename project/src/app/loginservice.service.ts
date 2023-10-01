@@ -1,19 +1,20 @@
+// design-visibility.service.ts
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class LoginserviceService {
+  private showDesignSubject = new BehaviorSubject<boolean>(true);
 
-  constructor() { }
-  private isSignUpSubject = new BehaviorSubject<boolean>(false);
+  setShowDesign(value: boolean) {
+    debugger
+    this.showDesignSubject.next(value);
+  }
 
- 
-  isSignUp$: Observable<boolean> = this.isSignUpSubject.asObservable();
-
- 
-  setSignUpValue(value: boolean) {
-    this.isSignUpSubject.next(value);
+  getShowDesign(): Observable<boolean> {
+        debugger
+    return this.showDesignSubject.asObservable();
   }
 }
